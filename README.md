@@ -8,7 +8,7 @@
 
 kubectl create namespace rocketmq
 # 部署测试集群, 单 Master
-helm -n rocketmq install rocketmq -f examples/test.yml ./
+helm -n rocketmq install rocketmq -f examples/test.yaml ./
 # 部署生产集群, 多 Master 多 Slave
 helm -n rocketmq install rocketmq -f examples/production.yaml ./
 ```
